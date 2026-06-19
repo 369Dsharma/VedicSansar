@@ -179,7 +179,7 @@ const Footer = () => {
 
       <div className="py-5 bg-gray-100">
             
-            <p className="text-center text-sm">&copy;2025 Vedic Sansar. All Rights Reserved.</p>
+            <p className="text-center text-sm">&copy;2026 VedicSansar. All Rights Reserved.</p>
       </div>
     </footer>
   );

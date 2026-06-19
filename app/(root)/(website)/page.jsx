@@ -11,6 +11,7 @@ import { GiReturnArrow } from "react-icons/gi";
 import { FaShippingFast } from "react-icons/fa";
 import { BiSupport } from "react-icons/bi";
 import { BiSolidDiscount } from "react-icons/bi";
+import { FAQ } from '@/components/Website/Faqs'
 
 const Home = () => {
   return (
@@ -68,12 +69,16 @@ const Home = () => {
 
       <Testimonial />
 
+     
+
       {/* service section */}
 
-      <section className=' lg:px-32 px-4 border-t-amber-800 py-10 mb-5 border border-b-amber-800'>
+      
+
+      <section className='mt-3  lg:px-32 px-4 border-t-amber-800 py-10 mb-7 border  border-b-amber-800'>
 
         <div className='grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10'>
-          <div className='text-center'>
+          <div className=' text-center'>
             <p className='flex justify-center items-center mb-3'>
                 <GiReturnArrow  size={40}/>
             </p>
@@ -81,7 +86,7 @@ const Home = () => {
             <p>Risk free shopping with easy returns.</p>
 
           </div>
-          <div className='text-center'>
+          <div className=' text-center'>
             <p className='flex justify-center items-center mb-3'>
                 <FaShippingFast  size={40}/>
             </p>
@@ -89,7 +94,7 @@ const Home = () => {
             <p>No extra cost, pay only for product.</p>
 
           </div>
-          <div className='text-center'>
+          <div className=' text-center'>
             <p className='flex justify-center items-center mb-3'>
                 <BiSupport  size={40}/>
             </p>
@@ -97,7 +102,7 @@ const Home = () => {
             <p>24/7 support,always here for you.</p>
 
           </div>
-          <div className='text-center'>
+          <div className=' text-center'>
             <p className='flex justify-center items-center mb-3'>
                 <BiSolidDiscount  size={40}/>
             </p>

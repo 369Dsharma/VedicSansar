@@ -23,6 +23,7 @@ import { Button } from "@/components/ui/button";
 import {  PuffLoader } from "react-spinners";
 import ProductReview from "@/components/Website/ProductReview";
 import { IoIosStar } from "react-icons/io";
+import { FAQ } from "@/components/Website/Faqs";
 const ProductDetails = ({ product, variant, colors, sizes, reviewCount }) => {
 
   const dispatch = useDispatch();
@@ -188,6 +189,14 @@ const ProductDetails = ({ product, variant, colors, sizes, reviewCount }) => {
             dangerouslySetInnerHTML={{ __html: decode(product.description) }}
           ></div>
 
+          <div className="mt-5 rounded-2xl border-2 p-1 w-62 bg-emerald-800">
+
+            <p  className="text-white font-bold  ml-2">
+              Expected Delivery : 3-5 Days
+            </p>
+
+          </div>
+
           <div className="mt-5">
               <p className="mb-2">
                 <span className="font-semibold">Color : </span>{variant?.color}
@@ -236,7 +245,7 @@ const ProductDetails = ({ product, variant, colors, sizes, reviewCount }) => {
             {/* <ButtonLoading type="button" text="Buy Now" className="w-full rounded-full py-6 px-6 text-md bg-gray-900 hover:bg-gray-700 cursor-pointer" /> */}
 
             {!isAddedIntoCart ? 
-              <ButtonLoading type="button" onClick={handleAddToCart} text="Add to Cart" className="w-full rounded-full py-6  text-md bg-amber-900 hover:bg-amber-800 cursor-pointer" />
+              <ButtonLoading type="button" onClick={handleAddToCart} text="Add to Cart" className="w-full border-white rounded-full py-6  text-md bg-amber-900 text-white hover:bg-amber-700  cursor-pointer" />
 
               :
 
@@ -264,9 +273,15 @@ const ProductDetails = ({ product, variant, colors, sizes, reviewCount }) => {
         </div>
       </div>
 
+      {/* Faqs */}
+
+      <FAQ />
+
       {/* Reviews section */}
 
       <ProductReview productId={product._id} />
+
+      
     </div>
   );
 };

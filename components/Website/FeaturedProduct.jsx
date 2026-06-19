@@ -19,16 +19,18 @@ const FeaturedProduct = async() => {
   return (
     //  Featured Products section
     
-    <section className='lg:px-32 px-4 sm:py-10'>
+    <section className='lg:px-32 px-4 sm:py-14 py-10 bg-amber-50/40'>
         <div className='flex justify-between items-center mb-5'>
-                <h2 className='sm:text-4xl text-2xl font-semibold text-amber-800'>Featured Products</h2>
+                <h2 className="sm:text-4xl text-2xl font-bold text-amber-900">
+                    Featured Products
+                </h2>
                 <Link href={WEBSITE_SHOP} className='flex gap-2 items-center underline underline-offset-4 hover:text-primary'>View All
                 
                  <IoIosArrowRoundForward size={25} />
                 </Link>
         </div>
 
-        <div className='grid md:grid-cols-4 grid-cols-2 sm:gap-10 gap-2'>
+        <div className='grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-2 gap-6 sm:gap-10'>
             {!productData.success && 
                 <div className='text-center py-5'>
                     Images are not loaded...Reload Page again!

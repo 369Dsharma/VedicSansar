@@ -51,7 +51,7 @@ const PrivacyPolicy = () => {
                 </p>
 
                 <p className='mt-3'>
-                    Thank you for trusting VedicSansar. Your privacy is important to us.
+                    Thank you for trusting . Your privacy is important to us.
                 </p>
             </div>
         </div>
